@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
-using OpenQA.Selenium.Support.UI;
 using System;
 using System.Threading;
 
@@ -16,7 +15,7 @@ namespace SeleniumTest.PageObects
 
         #region Locators
 
-        [FindsBy(How = How.XPath, Using = "//div[5]/div/div[1]/a/h3")]
+        [FindsBy(How = How.XPath, Using = "//*[@id='rso']/div[4]/div/div[1]/a/h3")]
         private IWebElement fourthItemInResults;
 
         [FindsBy(How = How.Name, Using = "q")]
