@@ -30,7 +30,7 @@ namespace SeleniumTest.Test
             searchPage.SearchGoogle(TestData.DataToSearch_Test1);
             searchPage.ClickOnSearchButton();
             var result = searchPage.FourthResult();
-            Assert.True(utils.IsValuePresentInResult(result, TestData.ExpectedResult2_Test1));
+            Assert.True(utils.IsValuePresentInResult(result, TestData.ExpectedResult1_Test1));
             log.Info("Finish testcase");
         }
     }
